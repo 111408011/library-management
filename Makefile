@@ -1,5 +1,5 @@
-project: project.o admin.o lgn.o student.o search.o admi.o issue.o closeapp.o regi.o time.o
-	cc project.o admin.o lgn.o student.o search.o admi.o issue.o closeapp.o regi.o time.o -o project
+project: project.o admin.o lgn.o student.o search.o admi.o issue.o closeapp.o addbooks.o regi.o time.o
+	cc project.o admin.o lgn.o student.o search.o admi.o issue.o closeapp.o regi.o addbooks.o time.o -o project
 
 project.o : project.c
 	cc -c project.c
@@ -19,7 +19,8 @@ lgn.o : lgn.c
 	cc -c lgn.c
 regi.o : regi.c
 	cc -c regi.c 
-
+addbooks.o:addbooks.c
+	cc -c addbooks.c
 time.o : time.c
 	cc -c time.c 
 	
